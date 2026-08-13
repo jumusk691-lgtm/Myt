@@ -19,7 +19,7 @@ export function StickyDownloadBar() {
         </div>
 
         <a
-          href="https://drive.google.com/file/d/1JBaOFo7JRhzEzylWhymaHRRYt8iHaLfW/view?usp=drivesdk"
+          href="https://www.mediafire.com/file/ora7kgwyl7pioi0/MYT_%25F0%259F%2587%25AE%25F0%259F%2587%25B3.apk/file"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-transform duration-200 active:scale-95"
