@@ -6,6 +6,7 @@ const steps = [
     icon: Download,
     title: 'Download APK',
     text: 'Click download and install the MYT app.',
+    href: 'https://www.mediafire.com/file/ora7kgwyl7pioi0/MYT_%25F0%259F%2587%25AE%25F0%259F%2587%25B3.apk/file',
   },
   {
     icon: Smartphone,
@@ -41,11 +42,23 @@ export function RegistrationSection() {
           <ol className="grid gap-4">
             {steps.map((step, index) => {
               const Icon = step.icon
+              const isDownload = Boolean(step.href)
+              const Element = isDownload ? 'a' : 'li'
+              const extraProps = isDownload
+                ? {
+                    href: step.href,
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                    className:
+                      'flex items-start gap-4 rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10',
+                  }
+                : {
+                    className:
+                      'flex items-start gap-4 rounded-xl border border-border bg-card p-5',
+                  }
+
               return (
-                <li
-                  key={step.title}
-                  className="flex items-start gap-4 rounded-xl border border-border bg-card p-5"
-                >
+                <Element key={step.title} {...extraProps}>
                   <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-brand-glow">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                     <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-primary-foreground">
@@ -60,7 +73,7 @@ export function RegistrationSection() {
                       {step.text}
                     </p>
                   </div>
-                </li>
+                </Element>
               )
             })}
           </ol>
