@@ -6,7 +6,7 @@ const steps = [
     icon: Download,
     title: 'Download APK',
     text: 'Click download and install the MYT app.',
-    href: 'https://www.mediafire.com/file/ora7kgwyl7pioi0/MYT_%25F0%259F%2587%25AE%25F0%259F%2587%25B3.apk/file',
+    href: 'https://www.mediafire.com/file/t0x70v7djtt26kp/MYT_%25F0%259F%2587%25AE%25F0%259F%2587%25B3.apk/file', 
   },
   {
     icon: Smartphone,
