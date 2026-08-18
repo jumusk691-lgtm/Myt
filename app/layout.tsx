@@ -28,6 +28,12 @@ export const metadata: Metadata = {
     'fast execution',
     'secure trading',
   ],
+  // 👇 यहाँ आइकॉन (Favicon) जोड़ा गया है
+  icons: {
+    icon: '/logo.png', // सुनिश्चित करें कि आपकी यह इमेज 'public' फोल्डर के अंदर मौजूद हो
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export const viewport: Viewport = {
